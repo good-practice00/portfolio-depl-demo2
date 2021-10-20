@@ -1,0 +1,77 @@
+.aboutBox {
+  /* border: 3px solid red; */
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4rem;
+}
+
+.aboutText {
+  /* border: 1px solid white; */
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 898px;
+}
+
+.aboutImage {
+  margin: 3rem auto;
+}
+
+.imagee {
+  width: 60vw;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* .aboutName {
+  color: azure;
+  font-weight: bold;
+} */
+
+/* .aboutId {
+  color: gold;
+  font-weight: bold;
+} */
+
+.aboutSkills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  margin: 20px 0 0;
+}
+
+.aboutSkills li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  /* font-weight: bold; */
+}
+
+.aboutSkills svg {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  color: var(--clr-red-light);
+  /* background: var(--clr-red-light); */
+}
+
+@media screen and (min-width: 898px) {
+  .aboutBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutText {
+    flex: 0 0 calc(40% - 1rem);
+    margin: 0;
+    margin-right: 2rem;
+  }
+
+  .aboutText p {
+    font-size: 1.1rem;
+  }
+  .aboutImage {
+    margin: 0;
+    flex: 0 0 calc(30% - 1rem);
+  }
+  .imagee {
+    margin: 0;
+  }
+}

@@ -1,0 +1,88 @@
+.navbar {
+  border: 5px solid red;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navCenter {
+  border: 3px solid blue;
+  max-width: 1372px;
+  margin: 0 auto;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border: 2px solid yellow;
+}
+
+.navBtn {
+  background: transparent;
+  border: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navLists {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.showLists {
+  height: 250px;
+  transition: all 0.3s linear;
+}
+
+.navList {
+  display: block;
+  border: 1px solid yellowgreen;
+  padding: 1rem 2rem;
+}
+
+.navList a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navList:hover {
+  background: darkkhaki;
+  padding-left: 3rem;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 879px) {
+  .navBtn {
+    display: none;
+  }
+
+  .navLists {
+    height: auto !important;
+    display: flex;
+  }
+  .navCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navList:hover {
+    background: darkkhaki;
+    padding: 1rem 2rem;
+    background: none;
+    transition: all 0.3s linear;
+  }
+
+  .navList a:hover {
+    color: aqua;
+    font-size: 1.3rem;
+    transition: all 0.3s linear;
+  }
+}

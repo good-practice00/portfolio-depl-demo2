@@ -1,0 +1,21 @@
+.animation {
+  /* border: 2px solid red; */
+  margin-left: 3rem;
+}
+
+.animation img {
+  /* max-width: 32rem; */
+  max-width: 25.6rem;
+}
+
+@media screen and (max-width: 1340px) {
+  .animation {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 1171px) {
+  .animation {
+    display: none;
+  }
+}

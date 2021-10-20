@@ -1,0 +1,132 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.recommendations {
+  /* border-bottom: 1px solid #fff; */
+  padding-bottom: 4rem;
+}
+
+.recomBox {
+  /* border: 3px solid white; */
+  /* background: var(--clr-grey-4); */
+  max-width: 640px;
+  margin: 0 auto;
+  width: 80vw;
+  /* height: 80vh; */
+  height: 580px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.recomBox article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid red; */
+  text-align: center;
+  padding: 1rem;
+  transition: all 1s linear;
+  /* transition: var(--transition); */
+  opacity: 0;
+  overflow: scroll;
+}
+
+.recomArticle p {
+  margin-bottom: 0.4rem;
+}
+
+.imagee {
+  /* border: 1px solid white; */
+  width: 100px;
+  display: block;
+  margin: 0.8rem auto;
+}
+
+article .text {
+  /* background: var(--clr-grey-3); */
+}
+
+.text button {
+  background: transparent;
+  border: transparent;
+  color: var(--clr-red-light);
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+}
+
+article.nextSlide {
+  transform: translate(100%);
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translate(0);
+}
+
+article.prevSlide {
+  transform: translate(-100%);
+}
+
+.articleName {
+  /* border: 1px solid red; */
+  margin-bottom: 0.2rem;
+  color: var(--clr-grey-4);
+}
+
+.articleTitle {
+  /* border: 1px solid red; */
+  margin-bottom: 1rem;
+  color: var(--clr-grey-4);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 160px;
+  transform: translateY(-50%);
+  /* background: var(--clr-grey-5); */
+  background: transparent;
+  color: var(--clr-white);
+  width: 1rem;
+  height: 1rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 0.8rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.prev svg,
+.next svg {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .text {
+    max-width: 36em;
+  }
+  .prev,
+  .next {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .recomBox {
+    height: 400px;
+  }
+}
