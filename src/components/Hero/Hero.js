@@ -5,7 +5,7 @@ import { socialIcons } from "../../utils/data";
 const Hero = () => {
   return (
     <div className={styles.heroSection}>
-      <h1>Ryan Park</h1>
+      <h1>Ryan </h1>
       <h1>Fullstack Developer</h1>
       <br />
       <p>
